@@ -15,6 +15,21 @@ load_dotenv()
 
 app = FastAPI()
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],  # Add POST method here
+    allow_headers=["*"],
+)
+
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World,Universe"}
+
 @app.post("/upload/")
 async def upload_pdf(pdf_files: List[UploadFile] = File(...)):
     try:
