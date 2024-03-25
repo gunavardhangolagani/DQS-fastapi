@@ -1,0 +1,6 @@
+fastapi
+PyPDF2
+langchain
+google-generativeai
+uvicorn
+python-dotenv
