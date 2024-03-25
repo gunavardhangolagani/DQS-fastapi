@@ -4,3 +4,5 @@ langchain
 google-generativeai
 uvicorn
 python-dotenv
+python-multipart
+langchain_google_genai
