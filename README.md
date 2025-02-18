@@ -40,8 +40,9 @@ This project is a FastAPI-based backend with a React frontend that allows users 
 
 ### 1. Clone the Repository
 ```
-git clone [https://github.com/your-username/your-repo.git](https://github.com/gunavardhangolagani/DQS-fastapi.git)
+git clone https://github.com/gunavardhangolagani/DQS-fastapi.git
 ```
+
 ```
 cd your-repo
 ```
